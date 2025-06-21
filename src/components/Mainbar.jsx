@@ -9,8 +9,8 @@ import Contact from '../pages/Contact'
 const Mainbar = () => {
   return (
     <>
-      <div className='bg-black flex flex-col items-center justify-top py-24 -ml-12 min-h-screen'>
-        <div className='bg-[#1e1e1e] ml-[25rem] rounded-xl w-3/5 text-white p-4'>
+      <div className='flex flex-col items-center justify-top py-24  ml-0 md:-ml-12 min-h-screen'>
+        <div className='bg-[#1e1e1e] ml-[13rem] md:ml-[25rem] rounded-xl w-3/5 text-white p-4'>
         <Navbar />
         <Router>
           <Routes>

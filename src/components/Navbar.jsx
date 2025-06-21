@@ -7,6 +7,7 @@ const Navbar = () => {
     <div className="bg-black/20 rounded-xl text-white w-full md:w-4/6 p-5 mx-auto mt-4 flex flex-col md:-mt-4 md:ml-[24rem] shadow-md mb-9 md:mb-0">
 
       {/* Hamburger Button (visible on small screens) */}
+      <div className='flex justify-center'>
       <button
         className="md:hidden text-white focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
@@ -21,6 +22,7 @@ const Navbar = () => {
           />
         </svg>
       </button>
+      </div>
 
       {/* Nav Links */}
       <nav className={`${isOpen ? "block" : "hidden"} md:block`}>

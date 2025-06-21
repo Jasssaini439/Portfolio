@@ -5,19 +5,37 @@ const Portfolio = () => {
     const projects = [
         {
             id: 1,
-            title: 'Portfolio Website',
-            description: 'A personal portfolio website showcasing my skills and projects.'
+            title: 'GYM Website',
+            sitename: 'FITLIFE',
+            description: 'A responsive gym website with features like class schedules, trainer profiles, and membership plans.',
+            image: '/projects/fit.jpg',
+            link: 'https://fitlife-olive.vercel.app/'
         },
         {
             id: 2,
-            title: 'E-commerce Website',
-            description: 'An e-commerce platform with product listings, cart functionality, and payment integration.'
+            title: 'RELEGIOUS Website',
+            sitename: 'SIKHISM ',
+            description: 'A religious website that provides information about various religious texts, events, and community activities.',
+            image: '/projects/gurudwara.jpg',
+            link: 'https://gurudwaras-information-nbpa.vercel.app/' 
         },
         {
             id: 3,
-            title: 'Blog Platform',
-            description: 'A blogging platform where users can create, edit, and comment on posts.'
-        }
+            title: 'NEWS Website',
+            sitename: 'JM NEWS',
+            description: 'A news website that aggregates the latest news articles from various sources, providing users with up-to-date information.',
+            image: '/projects/news.jpg',
+            link: 'https://github.com/Jasssaini439/News-app' 
+        },
+        {
+            id: 4,
+            title: 'TRAVEL Website',
+            sitename: 'TOUR AND TRAVEL',
+            description: 'A travel website that offers information on popular destinations, travel tips, and booking options for travelers.',
+            image: '/projects/travel.jpg',
+            link: 'https://github.com/Jasssaini439/Travel-website' 
+        },
+       
     ];
 
     return (
@@ -32,15 +50,27 @@ const Portfolio = () => {
                 Projects
                 <img src="/project.jpg" alt="book" className="w-10  object-contain" />
             </h2>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 {projects.map((project) => (
-                    <div key={project.id} className="bg-white/10 backdrop-blur-md rounded-lg p-6">
-                        <h3 className="text-lg font-semibold text-white mb-2">Project {project.id}</h3>
-                        <h1 className='text-xl font-semibold text-white mb-2'>{project.title}</h1>
-                        <p className="text-gray-400 mb-4">
-                            {project.description}
-                        </p>
+                    <div key={project.id} className="bg-[#2c2c2c] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
+                   <a href={project.link}>
+                    <img src={project.image} alt={project.title} className="w-full h-40 object-cover" />
+                    </a>
+                    <div className="p-4 text-white">
+                      <h3 className="font-semibold">{project.title}</h3>
+                      <p className="text-sm text-yellow-400">{project.sitename}</p>
+                      <a
+          href={project.link}
+          className="block md:hidden mt-3 text-center bg-yellow-400/80 text-black font-semibold py-2 rounded hover:bg-yellow-300 transition"
+        >
+          Read More
+        </a>
                     </div>
+                  </div>
+
+                  
+                    
 
                 ))}
             </div>

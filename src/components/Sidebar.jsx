@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
    
     <>
-     <div className="bg-[#1e1e1e] text-white p-6 w-52 md:w-64  min-h-fit mt-24 ml-2 md:ml-40 rounded-xl fixed">
+     <div className="bg-[#1e1e1e] text-white p-6 w-[200px] md:w-64  min-h-fit mt-24 ml-1 md:ml-40 rounded-xl fixed ">
       <div className="flex flex-col items-center">
         <img src="/p1.jpg" alt="Profile" className="rounded-full mb-4" />
         <h2 className="text-xl font-bold">Jashanvir Singh</h2>
@@ -14,8 +14,9 @@ const Sidebar = () => {
       </div>
       <div className="mt-8 space-y-5 text-sm text-gray-300">
         <div className="flex items-center gap-3">
-          <EnvelopeIcon className="w-5 h-5 text-yellow-400" />
-          <span>Email : jasssaini8900@gmail.com</span>
+          <EnvelopeIcon className="w-5 h-5 text-yellow-400 overflow-clip" />
+          <span>Email : jasssaini8900@gmail.
+            com</span>
         </div>
         <div className="flex items-center gap-3">
           <PhoneIcon className="w-5 h-5 text-yellow-400" />
