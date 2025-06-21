@@ -1,6 +1,6 @@
 import React from 'react'
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline'
-import { FaTwitter, FaFacebookSquare, FaMailBulk, FaInstagram } from 'react-icons/fa'
+import { FaMailBulk, FaInstagram } from 'react-icons/fa'
 
 const Sidebar = () => {
   return (
