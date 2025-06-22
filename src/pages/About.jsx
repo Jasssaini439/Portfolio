@@ -1,5 +1,18 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
+const fadeIn = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.6,
+      ease: 'easeInOut',
+    },
+  }),
+};
 const About = () => {
   return (
    <>
@@ -29,8 +42,16 @@ const About = () => {
                 What i'm doing
                 <img src="/work.jpg" alt="book" className="w-10  object-contain" />
             </h2>
-<div className='flex flex-col md:flex-row gap-6 justify-between items-center px-10'>
-        <div className='bg-white/10 backdrop-blur-md rounded-lg p-6 mb-8 hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer'>
+<div 
+
+className='flex flex-col md:flex-row gap-6 justify-between items-center px-10'>
+        <motion.div 
+        custom={ 1}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+        className='bg-white/10 backdrop-blur-md rounded-lg p-6 mb-8 hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer'>
         <div className='flex items-center gap-4 mb-4'>
         <img src="/design.jpg" alt="Web Design" className="w-10 h-10 text-yellow-400" />
             <h1>WEB DESIGNING</h1>
@@ -38,9 +59,15 @@ const About = () => {
             <p>
                 I create visually appealing and user-friendly web designs that enhance the user experience.
             </p>
-        </div>
+        </motion.div>
 
-        <div className='bg-white/10 backdrop-blur-md rounded-lg p-6 mb-8 hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer'>
+        <motion.div
+        custom={4}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+        className='bg-white/10 backdrop-blur-md rounded-lg p-6 mb-8 hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer'>
               
         <div className="flex items-center gap-4 mb-4 uppercase">
       <img src="/app.jpg" alt="Web Design" className="w-10 h-10 text-yellow-400" />
@@ -49,12 +76,18 @@ const About = () => {
             <p>
                 I build robust and scalable web applications that meet client requirements and industry standards.
             </p>
-        </div>
+        </motion.div>
 
         
         </div>
-        <div className='flex flex-col md:flex-row gap-6 justify-between items-center px-10 '>
-        <div className='bg-white/10 backdrop-blur-md rounded-lg p-6 mb-8 capitalize hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer'>
+        <div className='flex flex-col md:flex-row gap-6 justify-between items-center px-10 pt-6'>
+        <motion.div 
+        custom={4}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+        className='bg-white/10 backdrop-blur-md rounded-lg p-6 mb-8 capitalize hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer'>
         <div className="flex items-center gap-4 mb-4 uppercase">
       <img src="/digital.jpg" alt="Web Design" className="w-10 h-10 text-yellow-400" />
             <h1>digital marketing</h1>
@@ -62,9 +95,15 @@ const About = () => {
             <p>
                 I implement effective digital marketing strategies to enhance online presence and drive traffic.
             </p>
-        </div>
+        </motion.div>
 
-        <div className='bg-white/10 backdrop-blur-md rounded-lg p-6 mb-8 hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer'>
+        <motion.div 
+        custom={4}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+        className='bg-white/10 backdrop-blur-md rounded-lg p-6 mb-8 hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer'>
         <div className="flex items-center gap-4 mb-4 uppercase">
       <img src="/seo.jpg" alt="Web Design" className="w-10 h-10 text-yellow-400" />
             <h1>SEO OPTIMIZATION</h1>
@@ -72,7 +111,7 @@ const About = () => {
             <p>
                 I optimize websites to improve search engine rankings and increase visibility in search results.
             </p>
-        </div>
+        </motion.div>
         </div>
 
 
