@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 const Contact = () => {
+  
 
     const [result, setResult] = React.useState("");
 

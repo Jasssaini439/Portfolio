@@ -27,8 +27,8 @@ const Navbar = () => {
       {/* Nav Links */}
       <nav className={`${isOpen ? "block" : "hidden"} md:block`}>
         <ul className="flex flex-col md:flex-row md:space-x-9 space-y-4 md:space-y-0 font-serif text-2xl text-center md:text-left mt-4 md:mt-0">
-          <li><a href="/about" className="hover:text-gray-400">About</a></li>
-          <li><a href="/home" className="hover:text-gray-400">Resume</a></li>
+          <li><a href="/home" className="hover:text-gray-400">Resume</a></li>  
+           <li><a href="/about" className="hover:text-gray-400">About</a></li>
           <li><a href="/portfolio" className="hover:text-gray-400">Portfolio</a></li>
           <li><a href="/contact" className="hover:text-gray-400">Contact</a></li>
         </ul>

@@ -62,7 +62,7 @@ className='flex flex-col md:flex-row gap-6 justify-between items-center px-10'>
         </motion.div>
 
         <motion.div
-        custom={4}
+        custom={2}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -98,7 +98,7 @@ className='flex flex-col md:flex-row gap-6 justify-between items-center px-10'>
         </motion.div>
 
         <motion.div 
-        custom={4}
+        custom={5}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
