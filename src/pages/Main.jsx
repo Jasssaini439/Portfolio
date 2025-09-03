@@ -32,7 +32,7 @@ bg-gradient-to-r from-fuchsia-500 via-purple-600 to-blue-500 bg-clip-text text-t
     FRONT
   </h1></div>
       
-      <div className='flex flex-wrap justify-center'><h1 className='text-white pl-[89vh] pt-72 text-8xl font-serif bg-gradient-to-r from-fuchsia-500 via-purple-600 to-blue-500 bg-clip-text text-transparent
+      <div className='flex flex-wrap justify-center'><h1 className=' pl-[89vh] pt-72 text-8xl font-serif bg-gradient-to-r from-fuchsia-500 via-purple-600 to-blue-500 bg-clip-text text-transparent
 '>END</h1></div>
         <div>
          <Spline
