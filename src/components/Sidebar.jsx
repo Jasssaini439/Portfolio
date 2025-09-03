@@ -7,8 +7,8 @@ const Sidebar = () => {
    
     <>
      <div className="bg-[#1e1e1e] flex flex-row md:flex-col text-white  pl-6  py-6 md:p-6 w-[319px] md:w-64  min-h-fit mt-5 md:mt-24 ml-1 md:ml-40 rounded-xl md:fixed ">
-      <div className="flex flex-row md:flex-col items-center ">
-        <img src="/p1.jpg" alt="Profile" className="rounded-full mb-4 h-32  md:h-auto" />
+      <div className="flex flex-row md:flex-col items-center gap-6 ">
+        <img src="/p1.jpg" alt="Profile" className="rounded-full mb-4 h-32  md:h-auto p-3" />
         <h2 className="text-xl font-bold -mt-6 p-6 md:p-0">Jashanvir Singh</h2>
         <div className="text-center hidden md:block">
         <p className="text-gray-400  ">Web Developer</p>

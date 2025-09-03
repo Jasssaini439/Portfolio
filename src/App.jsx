@@ -1,21 +1,30 @@
-import { useState } from 'react'
+import React from 'react'
+import Landing from './pages/Landing'
+import Main from './pages/Main'
+import Home from './pages/Home'
+import About from './pages/About'
+import Portfolio from './pages/Portfolio'
+import Contact from './pages/Contact'
+import { Route, Routes } from 'react-router-dom'
 
-import './App.css'
-import Sidebar from './components/Sidebar'
-import Mainbar from './components/Mainbar'
-import Navbar from './components/Navbar'
-
-function App() {
-
-
+const App = () => {
   return (
-    <>
-    <div className='bg-black overflow-hidden min-h-screen'>
-    <Sidebar />
-    <Mainbar />
- 
+    <div>
+      <div>
+    <Routes>
+    <Route path='/' element= {<Main/>}/>
+
+    <Route path='/landing' element={<Landing/>}>
+
+    <Route path='' element={<Home />} />
+    <Route path='about' element={<About />} />
+    <Route path='portfolio' element={<Portfolio />} />
+    <Route path='contact' element={<Contact />} />
+
+    </Route>
+   </Routes>
     </div>
-    </>
+    </div>
   )
 }
 

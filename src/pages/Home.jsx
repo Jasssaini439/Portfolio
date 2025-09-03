@@ -7,8 +7,6 @@ const Home = () => {
         { name: 'CSS', level: 85 },
         { name: 'JavaScript', level: 70 },
         { name: 'React', level: 75 }
-
-
     ]
 
     const education = [
@@ -37,8 +35,6 @@ const Home = () => {
 
     return (
         <>
-
-
             <h1 className='font-arial font-bold text-3xl pl-10 -mt-3'>
                 <span className='underline underline-offset-[1rem] decoration-yellow-400 decoration-4 '>Re</span>sume</h1>
 
@@ -65,13 +61,6 @@ const Home = () => {
                     </div>
                 ))}
             </div>
-
-
-
-
-
-
-
             <div className=" px-10 ">
                 <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3 uppercase">
                     <span className="w-1 h-6 bg-yellow-400 inline-block rounded
@@ -99,20 +88,7 @@ const Home = () => {
                         </div>
                     ))}
                 </div>
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,8 +16,8 @@ const Navbar = () => {
           viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round"
             d={isOpen
-              ? "M6 18L18 6M6 6l12 12" // X icon
-              : "M4 6h16M4 12h16M4 18h16" // Hamburger icon
+              ? "M6 18L18 6M6 6l12 12" 
+              : "M4 6h16M4 12h16M4 18h16" 
             }
           />
         </svg>
@@ -27,10 +27,10 @@ const Navbar = () => {
       {/* Nav Links */}
       <nav className={`${isOpen ? "block" : "hidden"} md:block`}>
         <ul className="flex flex-col md:flex-row md:space-x-9 space-y-4 md:space-y-0 font-serif text-2xl text-center md:text-left mt-4 md:mt-0">
-          <li><a href="/home" className="hover:text-gray-400">Resume</a></li>  
-           <li><a href="/about" className="hover:text-gray-400">About</a></li>
-          <li><a href="/portfolio" className="hover:text-gray-400">Portfolio</a></li>
-          <li><a href="/contact" className="hover:text-gray-400">Contact</a></li>
+          <li><Link to="">Resume</Link> </li>  
+           <li><Link to="about">About</Link></li>
+          <li><Link to="portfolio">Projects</Link></li>
+          <li><Link to="contact">Contact</Link></li>
         </ul>
       </nav>
     </div>
